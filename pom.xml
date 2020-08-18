@@ -141,10 +141,10 @@
     </pluginManagement>
   </build>
 	
-<!-- 	<distributionManagement> -->
-<!--         <repository> -->
-<!--             <id>github</id> -->
-<!--             <url>https://maven.pkg.github.com/Sumayya-maven/nakul.spring_mvc-hibernate</url> -->
-<!--         </repository> -->
-<!--     </distributionManagement> -->
+<distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://github.com/Sumayya-maven/SpringBootWebApp.git</url>
+        </repository>
+    </distributionManagement>
 </project>
