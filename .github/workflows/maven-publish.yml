@@ -2,8 +2,7 @@
 # For more information see: https://github.com/actions/setup-java#apache-maven-with-a-settings-path
 
 name: Maven Package
-
-on: push
+on: [push]
 
 
 jobs:
@@ -24,6 +23,5 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn -B deploy
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+      run: mvn -B deploy -Dregistry=https://maven.pkg.github.com/Sumayya-maven -Dtoken=${{ github.token }}
+
