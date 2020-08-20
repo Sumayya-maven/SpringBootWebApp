@@ -5,7 +5,7 @@
   <groupId>training</groupId>
   <artifactId>spring_hibernate_crud</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   
     <name>crud_spring_hibernate Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
@@ -132,7 +132,7 @@
 <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://github.com/Sumayya-maven/SpringBootWebApp.git</url>
+            <url>https://maven.pkg.github.com/Sumayya-maven/SpringBootWebApp</url>
         </repository>
     </distributionManagement>
 </project>
