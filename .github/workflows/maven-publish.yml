@@ -1,9 +1,11 @@
 # This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
 # For more information see: https://github.com/actions/setup-java#apache-maven-with-a-settings-path
 
+
 name: Maven Package
 
-on: push
+on:
+  push
 
 jobs:
   build:
@@ -18,6 +20,13 @@ jobs:
         java-version: 1.8
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
+        source-folder: .github
+        destination-repository: https://nakulparashar17:${{ github.token }}@github.com/org/nakul.spring_mvc-hibernate
+        destination-folder: .
+        destination-branch: master
+        git-user: "nakulparashar17" 
+        git-user-email: nakul.ymca@gmail.com
+
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
